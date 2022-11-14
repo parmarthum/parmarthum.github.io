@@ -1,0 +1,557 @@
+:root{
+    --main_color: #3db4d9;
+    --black: #010103;
+    --color: #ffffff;
+    --border: 0.3rem solid #3db4d9;
+     --hover_color: #3db4d9;
+    --bg_color:#000000;
+}
+
+img{
+  background-color: transparent;
+}
+
+
+
+.gravity_main .main_section{
+    padding: 7rem 6rem;
+}
+
+.gravity_main #top_heading{
+  font-weight: 800;
+  font-size: 3.3rem;
+}
+
+.gravity_main #top_heading::before{
+  top: 9rem;
+  width: 8rem;
+}
+
+.gravity_main .heading span{
+    color: var(--main_color);
+}
+
+.heading{
+  font-weight: 600;
+}
+
+                   @media (max-width: 1024px) {
+                    .gravity_main .main_section{
+                      padding: 3rem 0.5rem;
+                      /* background-color: red; */
+                  }
+                  
+                  .gravity_main #top_heading{
+                    font-size: 1rem;
+                  }
+                  
+                  .gravity_main #top_heading::before{
+                    top: 3.4rem;
+                    width: 5rem;
+                  }
+                  
+                   }
+/* * ------------------------ ------------------- Gravity Rating Section  
+* -------------------------------------------------------------------------------*/
+.gravity_slide__section .carousel-item{
+  background-color: red;
+  height: 50rem;
+}
+.gravity_slide__section img{
+    background-color: red;
+  height: 100%;
+  object-fit:  100% center;
+}
+
+.gravity_rating__section{
+    position: relative;
+    height: auto;
+    padding: 4rem 15.5rem;
+    padding-bottom: 0;
+}
+
+.gravity_rating__section .content{
+    height: auto;
+    background-color: var(--main_color);
+    padding: 3rem 1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10rem;
+    border-radius: 2rem;
+}
+
+.gravity_rating__section .content .item i,
+.gravity_about_section .content  i {
+    font-size: 2rem;
+    align-items: center;
+    display: block;
+    margin-right: 1.5rem;
+    background-color: #fff;
+    padding:1.2rem 1.4rem;
+    border-radius: 50%;
+    border: 0;
+    margin-top: 1rem;
+    color: var(--main_color);
+}
+
+/* .gravity_rating__section .content .item i, */
+.gravity_rating__section .content .item h1,
+.gravity_rating__section .content .item p{
+    color: #fff;
+    text-align: center;
+}
+
+.gravity_rating__section .content .item h1{
+    padding-bottom: 0.5rem;
+    font-size: 2.7rem;
+}
+
+                  @media (max-width: 1024px) {
+                    .gravity_slide__section img{
+                      height: 10rem;
+                  }
+
+                  .gravity_rating__section{
+                      /* background-color: red; */
+                      padding: 1rem 2rem;
+                  }
+
+                  .gravity_rating__section .content{
+                      height: auto;
+                      width: 100%;
+                      padding: 2rem 3rem;
+                      display: block;
+                  }
+
+                  .gravity_rating__section .content .item i,
+                  .gravity_about_section .content  i {
+                      font-size: 1.3rem;
+                      margin-right: 1.6rem;
+                      padding:0.9rem 1rem;
+                      border: 0;
+                      margin-top: 1rem;
+                      color: var(--main_color);
+                  }
+
+                  /* .gravity_rating__section .content .item i, */
+                  .gravity_rating__section .content .item h1,
+                  .gravity_rating__section .content .item p{
+                      color: #fff;
+                      text-align: center;
+                  }
+
+                  .gravity_rating__section .content .item h1{
+                      padding-bottom: 0.5rem;
+                      font-size: 2.1rem;
+                  }
+                  }
+
+/* * ------------------------ ------------------- Gravity About Section  
+* -------------------------------------------------------------------------------*/
+.gravity_about_section .main_section{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.gravity_about_section .bg_img{
+    /* border-radius: 50%; */
+    width: 35rem;
+    height: 35rem;
+    background-color: rgba(34, 34, 34, 0.422) ;
+    border: var(--border);
+}
+ 
+.gravity_about_section .d_grid_2{
+    gap: 0;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.gravity_about_section .content {
+  /* background-color: #010103; */
+  margin-bottom: 2rem;
+}
+
+.gravity_about_section .bg_img #gravityimg{
+    /* border-radius: 50%; */
+    width: 22rem;
+    height: 22rem;
+    margin-top: 4rem;
+    /* border: 2rem solid red; */
+    position: absolute;
+    left: 23rem;
+    top: 18rem;
+}
+
+/* .item_right{
+    padding-top: 4rem;
+} */
+
+.gravity_about_section  .content_1{
+    margin-top: 3rem;
+}
+
+.gravity_about_section .content  i{
+    background-color: var(--main_color);
+    color: #fff;
+}
+
+.gravity_about_section .content h2{
+    padding-bottom: 1rem;
+}
+
+                        @media (max-width: 1024px) {
+                          .gravity_about_section .main_section{
+                            padding-left: 0;
+                            padding: 0;
+                        }
+                        
+                        .gravity_about_section .bg_img{
+                            /* border-radius: 50%; */
+                            width: 100%;
+                            height: 15rem;
+                        }
+                         
+                        .gravity_about_section .d_grid_2{
+                            gap: 0;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
+                        }
+                        
+                        .gravity_about_section .bg_img #gravityimg{
+                            display: none;
+                        }
+                        
+                        .gravity_about_section  .content_1{
+                            margin-top: 0;
+                        }
+                        
+                        
+                        }
+
+
+/* * ------------------------ ------------------- Gravity About Section  
+* -------------------------------------------------------------------------------*/
+.gravity_courses_section .item{
+  /* background-color: var(--main_color); */
+  padding:  3rem 0;
+  border: var(--border);
+  transition: all .3s ease;
+}
+
+
+
+.gravity_courses_section .item h1{
+  /* background-color: #ff0000; */
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.gravity_courses_section .item  .btn_box{
+  display:flex;
+  justify-content:center;
+}
+
+.gravity_courses_section .item  .btn_box .read_more_btn{
+  color: #000;
+  font-weight: 600;
+}
+
+
+
+.gravity_courses_section .item .btn_box .read_more_btn:hover{
+  background-color:var(--main_color) ;
+  color: #fff;
+}
+
+              @media (max-width: 990px) {
+                
+                      
+                    
+              }    
+                               
+.item_overflow_hidden{
+  overflow: hidden;
+}
+
+.DoubtClearing_Sessions_section{
+  padding-top: 0;
+  /* background-color: red;/ */
+}
+
+.DoubtClearing_Sessions_section #d_gridd{
+  grid-template-columns: 2fr 1fr;
+}
+
+
+.DoubtClearing_Sessions_section .item i{
+  font-size: 5rem;
+  margin-right: 9rem;
+  margin-bottom: 5.5rem;
+  display: block;
+  color: var(--main_color);
+  /* background-color: red; */
+}
+
+.DoubtClearing_Sessions_section .item .fa-search-minus{
+  font-size: 4rem;
+}
+
+.DoubtClearing_Sessions_section .item .fa-question-circle-o{
+  font-size: 3.8rem;
+}
+
+.DoubtClearing_Sessions_section .item .fa-search-minus{
+  font-size: 3.7rem;
+}
+
+.DoubtClearing_Sessions_section .item .fa-book {
+  font-size: 3.8rem;
+}
+
+.DoubtClearing_Sessions_section .item p{
+  width: 60rem;
+}
+              
+
+              @media (max-width: 990px) {
+                .DoubtClearing_Sessions_section{
+                  /* background-color: #000000; */
+                }
+                .DoubtClearing_Sessions_section #d_gridd{
+                  grid-template-columns: 1fr ;
+                }
+              
+              
+                .DoubtClearing_Sessions_section .item i{
+                  margin-right: 2rem;
+                  margin-bottom: 0;
+                  display: block;
+                  padding: 2.5rem 0;
+                  font-size: 3.8rem;
+                  /* background-color: green!important; */
+                }
+              
+                .DoubtClearing_Sessions_section .item .fa-search-minus{
+                  font-size: 2.8rem;
+                }
+              
+                .DoubtClearing_Sessions_section .item .fa-question-circle-o{
+                  font-size: 3.3rem;
+                }
+              
+                .DoubtClearing_Sessions_section .item .fa-search-minus{
+                  font-size: 2.8rem;
+                }
+              
+                .DoubtClearing_Sessions_section .item .fa-book {
+                  font-size: 2.9rem;
+                }
+              
+                .DoubtClearing_Sessions_section .item p{
+                  width: 100%;
+                }
+
+
+                .youtube_section .item{
+                  margin-top: -1rem;
+                }
+
+                .youtube_section .item iframe{
+                  height: 9rem;
+                }
+              }
+
+
+
+/* 9/ 10/11/12 */
+
+
+/* * PHOTO GALLERY and CLIENT TESTIMONIALS  Section --------------------------------------------------------- 
+* --------------------------------------------------------------------------------------- */
+/* 
+
+.gravity_main .gallery_testimonil_section{
+  background-color:  RED;
+
+} */
+
+.gravity_main .gallery_testimonil_section .slideBtn1  button{
+  background-color: red;
+}
+
+.gravity_main .gallery_testimonil_section .item .d_grid_4{
+  background-color: transparent;
+  gap: 1rem;
+}
+
+.gravity_main .gallery_testimonil_section .item img{
+  width: 100%;
+  height: 16rem;
+}
+
+.gravity_main .testimonil_slis  .carousel{
+  width: 100%;
+}
+
+.gravity_main .testimonil_slis  .carousel .item img{
+  /* background-color: red; */
+  width: 10rem;
+ margin-bottom: 1rem;
+}
+
+.gravity_main .testimonil_slis  .carousel .item .para{
+  /* background-color: red; */
+  padding-right: 15rem;
+}
+
+.position{
+display:flex;
+justify-content:space-between;
+padding-right: 3rem;
+}
+
+.position button{
+
+  margin: 1rem;
+   background-color: #ddd;
+  border: 0;
+  width: 4rem;
+  height: 4rem;
+}
+
+.gravity_main .testimonil_slis .slide .carousel-item   .d_flex{
+  display:flex;
+  justify-content: space-between; 
+}
+
+.gravity_main .testimonil_slis .slide .carousel-item  .card{
+  /* background-color: green; */
+  padding: 2.6rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1.6rem;
+  border-bottom: 0.1rem solid var(--main_color);
+}
+
+.gravity_main .testimonil_slis  .carousel img{
+  width:20rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 0;
+  
+}
+
+.gravity_main .testimonil_slis .slide .carousel-item  p{
+   /* background-color: red; */
+   padding: 0 1rem ;
+   color: var(--main_color);
+}
+
+.gravity_main .testimonil_slis .arrow_gravity{
+  background-color: red;
+}
+
+
+                              @media (max-width: 1024px) {
+                                .gravity_main .gallery_testimonil_section{
+                                  /* background-color:  pink; */
+                                  padding: 0;
+                                
+                                }
+
+                                
+                                .gravity_main .gallery_testimonil_section #d_grid{
+                                  grid-template-columns:  1fr;
+                                  
+                                }
+                                
+                                .gravity_main .gallery_testimonil_section .item .d_grid_4{
+                                  grid-template-columns: repeat( 2, minmax(0, 1fr) );
+                                  gap: 0.8rem;
+                                }
+                                
+                                .gravity_main .gallery_testimonil_section .item img{
+                                  width: 100%;
+                                  height: 7rem;
+                                  
+                                  margin-top: 2rem;
+                                }
+
+                                .gravity_main .testimonil_slis{
+                                  padding:0 ;
+                                  
+                                }
+
+                                .gravity_main .gallery_testimonil_section .heading{
+                                   padding: 1rem 0.9rem;
+                                }
+
+                                .gravity_main .gallery_testimonil_section .heading:before{
+                                  top:4rem;
+                                }
+                              
+                                .position{
+                                display:block;
+                                justify-content:space-between;
+                                padding-right: 0;
+                                }
+                                
+                                .position button{
+                                
+                                  margin: 1rem;
+                                   background-color: #ddd;
+                                  border: 0;
+                                  width: 2rem;
+                                  height: 2rem;
+                                }
+                                
+                                .gravity_main .testimonil_slis .slide .carousel-item   .d_flex{
+                                  display:block;
+                                }
+                                
+                                .gravity_main .testimonil_slis .slide .carousel-item  .card{
+                                  /* background-color: green; */
+                                  padding:1rem  ;
+                                  margin: 0;
+                                  width: 100%;
+                                }
+                                
+                                .gravity_main .testimonil_slis  .carousel img{
+                                  width:100%;
+                                  height: 7rem;
+                                  border-radius: 0;
+                                  border: 0;
+                                }
+                                .gravity_main .testimonil_slis .container{
+                                  padding: 0 1rem!important;
+                                }
+                                .gravity_main .testimonil_slis .slide .carousel-item  p{
+                                   padding:  1rem ;
+                                }
+                               }
+
+
+
+
+.achivers_page_section .item img{
+  height: 20rem;
+}
+
+.achivers_page_section .item  p{
+  padding: 1rem 2rem;
+}
+
+                        @media (max-width: 1024px) {
+                          .achivers_page_section .item{
+                            padding: 0;
+                          }
+                          .achivers_page_section .item img{
+                            height: 10rem;
+                          }
+                          
+                          .achivers_page_section .item  p{
+                            padding: 0.5rem 0;
+                            padding-bottom: 0;
+                          }
+                        }
