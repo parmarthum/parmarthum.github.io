@@ -7,14 +7,22 @@
     --bg_color:#000000;
 }
 
+body{
+  background-color: #f2f2f2eb;
+}
+
 img{
   background-color: transparent;
 }
 
-
+a{
+  text-decoration: none;
+}
 
 .gravity_main .main_section{
     padding: 7rem 6rem;
+    /* background-color: red; */
+    padding-bottom: 4rem;
 }
 
 .gravity_main #top_heading{
@@ -33,7 +41,28 @@ img{
 
 .heading{
   font-weight: 600;
+  height: 4rem;
+  padding: 0;
 }
+
+.heading span{
+  color: var(--main_color)!important;
+}
+
+
+
+             /* @media (max-width: 1024px) {
+               .header__2 .d_flex{
+                 display: flex;
+                 gap: 0;
+                 
+               }
+
+               .header__2 .d_flex img{
+                 padding: 0;
+               }
+             } */
+
 
                    @media (max-width: 1024px) {
                     .gravity_main .main_section{
@@ -43,10 +72,13 @@ img{
                   
                   .gravity_main #top_heading{
                     font-size: 1rem;
+                    padding-top: 3rem;
+                    padding-bottom: 1rem;
                   }
+
                   
                   .gravity_main #top_heading::before{
-                    top: 3.4rem;
+                    top: 5.4rem;
                     width: 5rem;
                   }
                   
@@ -54,13 +86,12 @@ img{
 /* * ------------------------ ------------------- Gravity Rating Section  
 * -------------------------------------------------------------------------------*/
 .gravity_slide__section .carousel-item{
-  background-color: red;
+  /* background-color: red; */
   height: 50rem;
 }
 .gravity_slide__section img{
-    background-color: red;
+    /* background-color: red; */
   height: 100%;
-  object-fit:  100% center;
 }
 
 .gravity_rating__section{
@@ -68,6 +99,7 @@ img{
     height: auto;
     padding: 4rem 15.5rem;
     padding-bottom: 0;
+    /* background-color: red; */
 }
 
 .gravity_rating__section .content{
@@ -113,7 +145,6 @@ img{
                   }
 
                   .gravity_rating__section{
-                      /* background-color: red; */
                       padding: 1rem 2rem;
                   }
 
@@ -122,12 +153,13 @@ img{
                       width: 100%;
                       padding: 2rem 3rem;
                       display: block;
+                      /* background-color: red */
                   }
 
                   .gravity_rating__section .content .item i,
                   .gravity_about_section .content  i {
                       font-size: 1.3rem;
-                      margin-right: 1.6rem;
+                      margin-right: 3rem;
                       padding:0.9rem 1rem;
                       border: 0;
                       margin-top: 1rem;
@@ -139,6 +171,9 @@ img{
                   .gravity_rating__section .content .item p{
                       color: #fff;
                       text-align: center;
+                      /* background: #000; */
+                      display: inline-block;
+                      width: 100%;
                   }
 
                   .gravity_rating__section .content .item h1{
@@ -150,8 +185,9 @@ img{
 /* * ------------------------ ------------------- Gravity About Section  
 * -------------------------------------------------------------------------------*/
 .gravity_about_section .main_section{
-    padding-top: 0;
+    padding-top: 5rem;
     padding-bottom: 0;
+    /* background-color: red; */
 }
 
 .gravity_about_section .bg_img{
@@ -206,6 +242,11 @@ img{
                             padding-left: 0;
                             padding: 0;
                         }
+
+                        .gravity_about_section .bg_img{
+                          margin-bottom: 3rem;
+                        }
+                        
                         
                         .gravity_about_section .bg_img{
                             /* border-radius: 50%; */
@@ -226,8 +267,15 @@ img{
                         .gravity_about_section  .content_1{
                             margin-top: 0;
                         }
+
+                        .gravity_about_section  .content i{
+                          display: block;
+                          margin-top: 0rem;
+                        }
                         
-                        
+                        #mob_text_center{
+                          text-align: center;
+                        }
                         }
 
 
@@ -236,8 +284,68 @@ img{
 .gravity_courses_section .item{
   /* background-color: var(--main_color); */
   padding:  3rem 0;
+  height: 31rem;
+  transition: all .5s ease;
+  overflow: hidden;
+}
+
+
+.gravity_courses_section .item .d_flex{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:0
+}
+
+.gravity_courses_section .item img{
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
   border: var(--border);
-  transition: all .3s ease;
+}
+
+.gravity_courses_section  .bg_img{
+  height: 100%;
+}
+
+.gravity_courses_section .item i{
+  font-size: 4rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: var(--border);
+  text-align: center;
+  line-height: 2.5;
+  color: #fff;
+}
+
+.gravity_courses_section .item .fa-stethoscope{
+  font-size: 4.7rem;
+  line-height: 2.2;
+}
+
+.gravity_courses_section .item .Engineering_icon{
+  width: 10rem;
+  height: 10rem;
+}
+
+
+.gravity_courses_section .item a{
+  color: #fff;
+}
+
+.gravity_courses_section .item:hover {
+  background-color: var(--main_color);
+  transform: scale(1.1);  overflow: hidden;
+
+}
+
+.gravity_courses_section .item:hover .d_flex i{
+  border-color: #fff;
+}
+
+.gravity_courses_section .item i:hover{
+  border-color: #fff;
 }
 
 
@@ -246,6 +354,14 @@ img{
   /* background-color: #ff0000; */
   text-align: center;
   padding: 2rem 0;
+  color: #fff;
+  height: 10rem;
+  height: 10rem;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.gravity_courses_section .item:hover h1{
+  color: #fff;
 }
 
 .gravity_courses_section .item  .btn_box{
@@ -254,11 +370,13 @@ img{
 }
 
 .gravity_courses_section .item  .btn_box .read_more_btn{
-  color: #000;
+  color: #fff;
   font-weight: 600;
 }
 
-
+.gravity_courses_section .item:hover  .btn_box .read_more_btn{
+  border-color: #fff;
+}
 
 .gravity_courses_section .item .btn_box .read_more_btn:hover{
   background-color:var(--main_color) ;
@@ -267,8 +385,50 @@ img{
 
               @media (max-width: 990px) {
                 
-                      
-                    
+                .gravity_courses_section .item{
+                  /* background-color: var(--main_color); */
+                  padding:   1rem;
+                  border: var(--border);
+                  height: auto;
+                  transition: all .3s ease;
+                }
+
+                .gravity_courses_section .item img{
+                  border-radius: 50%;
+                  width: 4.8rem;
+                  height: 4.8rem;
+                  border: var(--border);
+                }
+
+                .gravity_courses_section .item i{
+                  font-size: 2rem;
+                  width: 4.8rem;
+                  height: 4.8rem;
+                  line-height: 2.3;
+                }
+
+                .gravity_courses_section .item .fa-stethoscope{
+                  font-size:2.2rem;
+                  line-height: 2.2;
+                }
+                
+                .gravity_courses_section .item .Engineering_icon{
+                  width: 10rem;
+                  height: 10rem;
+                }
+                
+                
+                .gravity_courses_section .item h1{
+                  /* background-color: #ff0000; */
+                  text-align: center;
+                  padding: 2rem 0;
+                  color: #fff;
+                  height: auto;
+                }
+                
+                .gravity_courses_section .item  .btn_box .read_more_btn{
+                  border: 0.2rem solid var(--main_color);
+                }
               }    
                                
 .item_overflow_hidden{
@@ -291,7 +451,8 @@ img{
   margin-bottom: 5.5rem;
   display: block;
   color: var(--main_color);
-  /* background-color: red; */
+  /* background-color:  red ; */
+  width: 3.5rem;
 }
 
 .DoubtClearing_Sessions_section .item .fa-search-minus{
@@ -303,7 +464,7 @@ img{
 }
 
 .DoubtClearing_Sessions_section .item .fa-search-minus{
-  font-size: 3.7rem;
+  font-size: 3.6rem;
 }
 
 .DoubtClearing_Sessions_section .item .fa-book {
@@ -312,6 +473,10 @@ img{
 
 .DoubtClearing_Sessions_section .item p{
   width: 60rem;
+}
+
+.youtube_section .item iframe{
+  height: 25rem;
 }
               
 
@@ -324,30 +489,37 @@ img{
                 }
               
               
-                .DoubtClearing_Sessions_section .item i{
-                  margin-right: 2rem;
+                .DoubtClearing_Sessions_section .item  .content i{
+                  margin-right: 3rem;
                   margin-bottom: 0;
                   display: block;
                   padding: 2.5rem 0;
-                  font-size: 3.8rem;
-                  /* background-color: green!important; */
+                  font-size: 3rem;
+                  width: 2rem;
+                  margin-top: 1.9rem;
+                }
+
+                .DoubtClearing_Sessions_section .item .fa-search-minus{
+                  font-size: 2.7rem!important;
+                  
                 }
               
-                .DoubtClearing_Sessions_section .item .fa-search-minus{
-                  font-size: 2.8rem;
+                .DoubtClearing_Sessions_section .item .fa-lightbulb-o {
+                  font-size: 3.6rem!important;
+                  /* background-color: red!important; */
                 }
+
+                /* 
               
                 .DoubtClearing_Sessions_section .item .fa-question-circle-o{
-                  font-size: 3.3rem;
-                }
-              
-                .DoubtClearing_Sessions_section .item .fa-search-minus{
-                  font-size: 2.8rem;
-                }
-              
-                .DoubtClearing_Sessions_section .item .fa-book {
                   font-size: 2.9rem;
                 }
+              
+               
+              
+                .DoubtClearing_Sessions_section .item .fa-book {
+                  font-size: 1rem;
+                } */
               
                 .DoubtClearing_Sessions_section .item p{
                   width: 100%;
@@ -358,8 +530,15 @@ img{
                   margin-top: -1rem;
                 }
 
+                
+
+                .youtube_section {
+                  padding-top: 1rem;
+                  /* background-color: red; */
+                }
+
                 .youtube_section .item iframe{
-                  height: 9rem;
+                  height: 13rem;
                 }
               }
 
@@ -370,177 +549,85 @@ img{
 
 /* * PHOTO GALLERY and CLIENT TESTIMONIALS  Section --------------------------------------------------------- 
 * --------------------------------------------------------------------------------------- */
-/* 
 
-.gravity_main .gallery_testimonil_section{
-  background-color:  RED;
-
-} */
-
-.gravity_main .gallery_testimonil_section .slideBtn1  button{
-  background-color: red;
-}
-
-.gravity_main .gallery_testimonil_section .item .d_grid_4{
-  background-color: transparent;
-  gap: 1rem;
-}
-
-.gravity_main .gallery_testimonil_section .item img{
+.TESTIMONIALS_section .swiper {
   width: 100%;
-  height: 16rem;
+  height: 100%;
 }
 
-.gravity_main .testimonil_slis  .carousel{
-  width: 100%;
+.TESTIMONIALS_section .swiper .swiper-wrapper{
+  padding-bottom: 3rem;
 }
 
-.gravity_main .testimonil_slis  .carousel .item img{
-  /* background-color: red; */
-  width: 10rem;
- margin-bottom: 1rem;
+.TESTIMONIALS_section .swiper-slide {
+  height: 40rem;
+  background: var(--main_color);
 }
 
-.gravity_main .testimonil_slis  .carousel .item .para{
-  /* background-color: red; */
-  padding-right: 15rem;
-}
-
-.position{
-display:flex;
-justify-content:space-between;
-padding-right: 3rem;
-}
-
-.position button{
-
-  margin: 1rem;
-   background-color: #ddd;
-  border: 0;
-  width: 4rem;
-  height: 4rem;
-}
-
-.gravity_main .testimonil_slis .slide .carousel-item   .d_flex{
-  display:flex;
-  justify-content: space-between; 
-}
-
-.gravity_main .testimonil_slis .slide .carousel-item  .card{
-  /* background-color: green; */
-  padding: 2.6rem 1rem;
-  margin-bottom: 1rem;
-  border-radius: 1.6rem;
-  border-bottom: 0.1rem solid var(--main_color);
-}
-
-.gravity_main .testimonil_slis  .carousel img{
-  width:20rem;
-  height: 7rem;
-  border-radius: 50%;
-  border: 0;
-  
-}
-
-.gravity_main .testimonil_slis .slide .carousel-item  p{
-   /* background-color: red; */
-   padding: 0 1rem ;
-   color: var(--main_color);
-}
-
-.gravity_main .testimonil_slis .arrow_gravity{
-  background-color: red;
-}
-
-
-                              @media (max-width: 1024px) {
-                                .gravity_main .gallery_testimonil_section{
-                                  /* background-color:  pink; */
-                                  padding: 0;
-                                
-                                }
-
-                                
-                                .gravity_main .gallery_testimonil_section #d_grid{
-                                  grid-template-columns:  1fr;
-                                  
-                                }
-                                
-                                .gravity_main .gallery_testimonil_section .item .d_grid_4{
-                                  grid-template-columns: repeat( 2, minmax(0, 1fr) );
-                                  gap: 0.8rem;
-                                }
-                                
-                                .gravity_main .gallery_testimonil_section .item img{
-                                  width: 100%;
-                                  height: 7rem;
-                                  
-                                  margin-top: 2rem;
-                                }
-
-                                .gravity_main .testimonil_slis{
-                                  padding:0 ;
-                                  
-                                }
-
-                                .gravity_main .gallery_testimonil_section .heading{
-                                   padding: 1rem 0.9rem;
-                                }
-
-                                .gravity_main .gallery_testimonil_section .heading:before{
-                                  top:4rem;
-                                }
-                              
-                                .position{
-                                display:block;
-                                justify-content:space-between;
-                                padding-right: 0;
-                                }
-                                
-                                .position button{
-                                
-                                  margin: 1rem;
-                                   background-color: #ddd;
-                                  border: 0;
-                                  width: 2rem;
-                                  height: 2rem;
-                                }
-                                
-                                .gravity_main .testimonil_slis .slide .carousel-item   .d_flex{
-                                  display:block;
-                                }
-                                
-                                .gravity_main .testimonil_slis .slide .carousel-item  .card{
-                                  /* background-color: green; */
-                                  padding:1rem  ;
-                                  margin: 0;
-                                  width: 100%;
-                                }
-                                
-                                .gravity_main .testimonil_slis  .carousel img{
-                                  width:100%;
-                                  height: 7rem;
-                                  border-radius: 0;
-                                  border: 0;
-                                }
-                                .gravity_main .testimonil_slis .container{
-                                  padding: 0 1rem!important;
-                                }
-                                .gravity_main .testimonil_slis .slide .carousel-item  p{
-                                   padding:  1rem ;
-                                }
-                               }
-
-
-
-
-.achivers_page_section .item img{
+.img_boxx{
   height: 20rem;
 }
 
-.achivers_page_section .item  p{
-  padding: 1rem 2rem;
+.TESTIMONIALS_section .swiper-slide .img_boxx img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: 100%;
 }
+
+.TESTIMONIALS_section .swiper-slide .content{
+  padding:  2rem;
+}
+
+.TESTIMONIALS_section .swiper-slide .content P{
+  color: #fff;
+}
+
+.TESTIMONIALS_section .swiper-slide .content .first_p{
+  height: 10rem;
+}
+
+.TESTIMONIALS_section .swiper-slide .content .fa_star_icon .fa-star{
+  color: orange;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+
+
+                        @media (max-width: 1024px) {
+                          .TESTIMONIALS_section .swiper .swiper-wrapper{
+                            padding-bottom: 0rem;
+                          }
+                          
+                          .TESTIMONIALS_section .swiper-slide {
+                            height: auto;
+                          }
+                          
+                          .img_boxx{
+                            height: 12rem;
+                          }
+                          
+                          .TESTIMONIALS_section .swiper-slide .img_boxx img{
+                            height: 100%;
+                            object-fit: cover;
+                          }
+                          
+                          .TESTIMONIALS_section .swiper-slide .content{
+                            padding:  1rem;
+                          }
+                          
+                          .TESTIMONIALS_section .swiper-slide .content .first_p{
+                            height: 6.1rem;
+                          }
+                          
+                          .TESTIMONIALS_section .swiper-slide .content .fa_star_icon .fa-star{
+                            font-size: 1.1rem;
+                            padding: 0.7rem 0;
+                          }
+                          
+                        }
+
 
                         @media (max-width: 1024px) {
                           .achivers_page_section .item{
@@ -554,4 +641,617 @@ padding-right: 3rem;
                             padding: 0.5rem 0;
                             padding-bottom: 0;
                           }
+
+                          #gravity_founder_page {
+                            height:auto;
+                          }
                         }
+
+                        .our_project__section .Service_page_section .service_links{
+                          padding-bottom: 3rem;
+                        }
+                        
+                        .our_project__section .imb_box{
+                          margin-bottom: 3rem;
+                        }
+                        
+                        .service_links{ 
+                          position: relative; 
+                          padding: 0 ; 
+                          display:flex; 
+                          justify-content: center;
+                          align-items:center;  
+                        }  
+                        
+                        .service_links .nav{ 
+                          display:flex; 
+                          align-items:center; 
+                          gap:3rem ;
+                          border: 0;
+                        }
+                        .service_links .nav li{ 
+                          position: relative; 
+                          padding-bottom: 2rem;
+                        }
+                        
+                        
+                        .service_links .nav li a{
+                          font-size: 1.6rem;
+                          color: var(--bg_color);
+                        }
+                        
+                        .service_links .nav li a:hover{
+                          color: var(--main_color);
+                        }
+                        
+                        .tab-content.active { display: block;}
+                        .tab-content.hide { display: none; } 
+                        
+                        .service_content #birday_pic_positn{
+                          object-position: top;
+                          height: 100%;
+                        }
+                        .center_positn{
+                          position: center;
+                        }
+                        
+                        .our_project__section .imb_box img{
+                          height:25rem;
+                        }
+                        
+                        #img_2, #img_4, #img_10{
+                          height: 40rem;
+                        }
+                        
+/* * gravity founder page Section --------------------------------------------------------- 
+* --------------------------------------------------------------------------------------- */
+
+
+#gravity_founder_page{
+background-color: transparent;
+height: auto;
+}
+
+
+#gravity_founder_page .item h1,
+#gravity_founder_page .item p{
+color: #000;
+/* background-color: red; */
+}
+
+#gravity_founder_page h1{
+padding: 0;
+text-align: center;
+}
+
+#gravity_founder_page h1::before{
+  top: 4.5rem;
+}
+
+#gravity_founder_page .d_grid{
+display: block;
+}
+
+
+#gravity_founder_page .item #gravity_bg_img{
+  width: 28rem;
+  height: 19rem;
+  background-color: transparent;
+  position: relative;
+  border: 0.3rem solid var(--main_color) ;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 1rem;
+}
+
+#gravity_founder_page .item .d_flex{
+justify-content: center;
+}
+
+#gravity_founder_page .item{
+padding: 0;
+}
+
+#gravity_founder_page .item h4{
+font-size: 1.6rem;
+font-weight: 700;
+padding-top: 2rem;
+text-align: center;
+}
+
+#gravity_founder_page .item p{
+text-align: left;
+width: 60rem;
+position: relative;
+padding-left: 3rem;
+}
+
+#gravity_founder_page .item .para_boxx p{
+  padding-top: 2rem;
+}
+
+#gravity_founder_page .item .para_boxx p::before{
+  position: absolute;
+  content: ' ';
+  /* background-color: red; */
+  height: 100%;
+  border-left: 0.3rem solid var(--main_color);
+  display: flex; 
+  left:0rem;
+}
+
+
+#gravity_founder_page .item #ex_para{
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+                                    @media (max-width: 1024px) {
+                                    
+                                        #gravity_founder_page{
+                                          background: #f4f4f4;
+                                        }
+  
+                                        #gravity_founder_page .heading::before{
+                                          /* background-color: red; */
+                                          top: 3rem;
+                                        }
+                                        #gravity_founder_page .d_grid{
+                                        display: block;
+                                        }
+                                        
+                                        
+                                        #gravity_founder_page .item #gravity_bg_img{
+                                          width: 100%;
+                                          height: 10rem;
+                                        }
+                                        
+                                        #gravity_founder_page .item .d_flex{
+                                           justify-content: center;
+                                        }
+                                        
+                                        #gravity_founder_page .item{
+                                        padding: 0;
+                                        }
+                                        
+                                        #gravity_founder_page .item h2{
+                                        font-size: 1.6rem;
+                                        font-weight: 700;
+                                        padding: 2rem 0;
+                                        text-align: center;
+                                        }
+                                        
+                                        #gravity_founder_page .item p{
+                                          text-align: center;
+                                          width: 100%;
+                                          position: relative;
+                                          padding-left: 0;
+                                        }
+                                        
+                                        #gravity_founder_page .item .para_boxx p{
+                                          padding-top: 2rem;
+                                        }
+                                        
+                                        #gravity_founder_page .item .para_boxx p::before{
+                                          display: none;
+                                        }
+                                        
+                                        
+                                        #gravity_founder_page .item #ex_para{
+                                          display: inline-block;
+                                          width: 100%;
+                                          padding: 0;
+                                          padding-bottom: 2rem;
+                                          text-align: center;
+                                        }
+  
+                                        #gravity_founder_page .founder_name {
+                                          font-size:1.5rem ;
+                                          text-align: center;
+                                        }
+                                             
+                                    }                       
+                        
+                        
+                                    @media (max-width: 990px) {
+                                      
+                                      .our_project__section .Service_page_section .service_links{
+                                        padding-bottom: 1rem;
+                                        width: 100%;
+                                      }
+                                      
+                                      .our_project__section .imb_box{
+                                        margin-bottom: 0.1rem;
+                                        width: 100%;
+                                      }
+                                      
+                        
+                                        .navbar_list{
+                                            padding: 0;
+                                            margin: 0;
+                                        }
+                        
+                                        .service_links .nav{ 
+                                          gap:0  ;  
+                                          display: block;
+                                        }
+                        
+                                        .service_links .nav li{ 
+                                          position: relative;  
+                                          padding: 0;
+                                        }
+                        
+                                        .service_links .nav li{ 
+                                          position: relative; 
+                                          padding-bottom: 0;
+                                        }
+                                        .service_links .nav li a{ 
+                                          font-size: 0.9rem  ;
+                                        }
+                                        
+                                        .our_project__section  .d_grid{
+                                          gap: 0;
+                                          
+                                        }
+                        
+                                        .tab-content.active { display: block;}
+                                        .tab-content.hide { display: none; } 
+                                        
+                        
+                                        .our_project__section .imb_box img,
+                                        #img_2, #img_4, #img_10{
+                                          height:10rem;
+                                          width: 100%;
+                                          height: 10rem;
+                                        }
+                                        
+                        
+                                    }    
+                                                     
+                                    .item_overflow_hidden{
+                                      overflow: hidden;
+                                    }
+       
+                                    
+
+.subject_pdf_link .heading::before{
+  border: 0;
+}
+                        
+
+#mantiors_page_section{
+  height: auto;
+  padding-bottom: 7rem;
+  background-color: transparent;
+}
+
+#mantiors_page_section h1::before{
+  top: 4.4rem;
+}
+
+#mantiors_page_section  .item h1,
+#mantiors_page_section  .item p{
+  color: #000;
+}
+
+#mantiors_page_section  .item img{
+  width: 20rem;
+  height: 10rem;
+}
+
+#mantiors_page_section  .item .d_flex{
+  gap: 2rem;
+}
+
+#mantiors_page_section h2{
+  font-size:1.9rem ;
+  font-weight:600
+}
+
+
+                                        @media (max-width:991px) {
+                                          #mantiors_page_section{
+                                            height: auto;
+                                            padding-bottom: 1rem;
+                                          }
+
+                                    
+                                          
+                                          #mantiors_page_section  .item img{
+                                            width: 100%;
+                                            height: 11rem;
+                                            display: block;
+                                            margin-bottom: 1rem;
+                                          }
+                                          
+                                          #mantiors_page_section  .item .d_flex{
+                                            gap: 0rem;
+                                            display: block;
+                                          }
+
+                                          #mantiors_page_section  .item p{
+                                            width: 100%;
+                                          }
+
+                                          #mantiors_page_section h2{
+                                            font-size:1.3rem ;
+                                            padding: 0.8rem 0;
+                                            font-weight:600;
+                                            text-align: center;
+                                          }
+
+                                        #mantiors_page_section  .heading::before{
+                                            top: 2.5rem;
+                                            }
+                                        }
+
+
+
+
+.class_pdf_Section  .heading{
+  text-align: center;
+  display: block;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+
+
+.class_pdf_Section  .heading::before{
+  top: 4.1rem;
+}
+
+.class_pdf_Section .item .heading{
+  height: 9rem;
+  
+  font-size: 1.7rem;
+  line-height: 1.3;
+}
+
+
+.class_pdf_Section .item .heading::before{
+    border: none;
+}
+
+/* ////// */
+.our_achievers_section .item img{
+  height: 20rem;
+}
+
+.our_achievers_section .item p{
+  padding: 1rem 0;
+}
+
+.our_achievers_section .heading::before{
+  top: 4.5rem;
+}
+
+
+.contact_us #contactus_heading,
+#gravity_gallery_heading{
+  height: 4rem;
+  padding-top: 1.5rem;
+}
+
+#gravity_gallery_heading::before{
+  top: 4.5rem;
+}
+
+.contact_us #contactus_heading{
+  margin-top: 4rem;
+}
+
+.contact_us #contactus_heading::before{
+  top: 6rem;
+}
+
+#gravity_contact_us_section .three_card_section{
+  padding-top: 2rem;
+}
+
+                        @media (max-width:991px) {
+                          .contact_us #contactus_heading{
+                            margin-top: 0rem;
+                          }
+
+                          .contact_us #contactus_heading::before{
+                            top: 4rem;
+                          }
+                          
+                        }
+
+
+                        @media (max-width:991px) {
+                          .our_achievers_section .item img{
+                            height: 10rem;
+                          }
+                          
+                          .our_achievers_section .item p{
+                            padding:  0;
+                            padding-top: 1rem;
+                          }
+
+                          
+                          .our_achievers_section  .heading::before{
+                            top: 2.5rem;
+                          }
+                          }
+              
+/* ------------------------  Bank Detail section ----------------------------------------
+---------------------------------------------------------------------------------------------- */
+
+.bank_detail_section{
+  /* background-color: red; */
+  height: 76vh;
+}
+
+.bank_detail_section .content {
+ display: flex;
+ justify-content: center ;  
+}
+
+.bank_detail_section h1::before{
+  top: 4.5rem;
+}
+
+.bank_detail_section .card{
+  padding: 2rem 2rem;
+  background-color: var(--main_color);
+  width: 31rem;
+  height: 33rem;
+  border: 1px solid var(--dark-green);
+  
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.bank_detail_section .card:hover{
+  box-shadow:var(--box-shadow-2);
+}
+
+.bank_detail_section .card h2{
+  font-size: 1.5rem;
+}
+
+.bank_item{
+  margin-bottom:0rem;
+}
+
+.bank_item img{
+  height: 12rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+ 
+.bank_item h2,p{
+  color: #fff;
+}
+
+.bank_item p{
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.bank_detail_section .card .fa-credit-card-alt{
+  color: #fff;
+  font-size: 6rem;
+  float: right;
+}
+
+/* // */
+
+#gravity_contact_us_section .item h1{
+  height: 5rem;
+  /* background-color: red!important; */
+}
+
+
+
+                                @media (max-width:991px) {
+                                  .bank_detail_section{
+                                    /* background-color: red; */
+                                    height: auto;
+                                  }
+
+                                  .bank_detail_section h1{
+                                    padding-bottom: 3rem;
+                                  }
+                                  
+                                  .bank_detail_section .content {
+                                   display: block;
+                                  }
+                                  
+                                  .bank_detail_section .card{
+                                    padding: 2rem 2rem;
+                                    width: 100%;
+                                    height: 33rem;
+                                  }
+                                  
+                                  .bank_detail_section .card:hover{
+                                    box-shadow:var(--box-shadow-2);
+                                  }
+                                  
+                                  .bank_detail_section .card h1{
+                                    font-size: 1.5rem;
+                                    padding: 0;
+                                  }
+                                  
+                                  .bank_item{
+                                    margin-bottom:0rem;
+                                  }
+                                  
+                                  .bank_item img{
+                                    height: 12rem;
+                                    width: 100%;
+                                    margin-top: 0;
+                                  }
+                                   
+                                  .bank_item h2,p{
+                                    color: #fff;
+                                  }
+                                  
+                                  .bank_item p{
+                                    font-size: 1.7rem;
+                                    padding:  0;
+                                    color: #fff;
+                                  }
+                                  
+                                  .bank_detail_section .card .fa-credit-card-alt{
+                                    color: #fff;
+                                    font-size: 6rem;
+                                    float: right;
+                                  }
+
+                                  #gravity_contact_us_section .item h1{
+                                    height: 2rem;
+                                  }
+                                  
+                                  
+                                }
+#gravity_contact_us_section .form_section .heading{
+  /* background-color: red!important; */
+  top: 0;
+  padding: 1rem;
+}
+
+
+/* gallery page */
+.gravity_gallery_sections h1{
+  position: relative;
+  top: 4.2rem;
+}
+
+.gravity_gallery_sections #gravity_gallery_heading::before{
+  top: 6rem;
+}
+
+.gravity_gallery_sections .gallery_page_section{
+  margin-top: 7.4rem;
+}
+
+
+                                 @media (max-width:991px) {
+                                  .gravity_gallery_sections h1{
+                                    position: relative;
+                                    top: 0;
+                                  }
+                                  
+                                  .gravity_gallery_sections #gravity_gallery_heading::before{
+                                    top: 4rem;
+                                  }
+                                  
+                                  .gravity_gallery_sections .gallery_page_section{
+                                    margin-top: 2rem;
+                                  }
+
+                                  .gravity_gallery_sections .gallery_page_section .item{
+                                    height: 12rem;
+                                  }
+                                  
+                                 }
+#course_page_id{
+  height: auto;
+}
